@@ -33,7 +33,7 @@ body {
     position: fixed;
     top: 0; left: 0;
     width: 50%; height: 100%;
-    background-image: url('background.jpg');
+    background-image: url('image/background.jpg');
     background-size: 200% 100%;
     background-position: left center;
     transition: transform 1.4s cubic-bezier(0.77, 0, 0.18, 1);
@@ -44,7 +44,7 @@ body {
     position: fixed;
     top: 0; right: 0;
     width: 50%; height: 100%;
-    background-image: url('background.jpg');
+    background-image: url('image/background.jpg');
     background-size: 200% 100%;
     background-position: right center;
     transition: transform 1.4s cubic-bezier(0.77, 0, 0.18, 1);
