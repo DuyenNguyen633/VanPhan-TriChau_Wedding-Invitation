@@ -1,6 +1,5 @@
 /* ═══════════════════════════════════════════
    MERGED STYLE.CSS
-   opening + wedding page + animations
 ═══════════════════════════════════════════ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -166,7 +165,7 @@ body.opened #ui {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.55);
 }
 
 .cover-bg img {
@@ -220,29 +219,30 @@ body.opened #ui {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 6px;
     pointer-events: none;
     padding: 0 36px;
 }
 
 .cover-tag {
     font-family: 'Montserrat', sans-serif;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.45em;
     color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     display: block;
+    margin-top: 80px;
 }
 
 .cover-events {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 0;
     width: 100%;
-    max-width: 420px;
+    max-width: 480px;
 }
 
 .cover-event {
@@ -250,51 +250,46 @@ body.opened #ui {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3px;
-    padding: 0 24px;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 20px;
 }
 
 .cover-event:first-child {
-    border-right: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255,255,255,0.35);
 }
 
-/* Event name — italic serif */
 .cover-event-label {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    color: rgba(255,255,255,0.9);
-    line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.4;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-/* Thin decorative rule between name and time */
-.cover-event-label:last-of-type {
-    width: 32px;
-    height: 1px;
-    background: rgba(255,255,255,0.5);
-    content: '';
-    display: block;
-    margin: 4px auto;
-}
-
-/* Day/time line */
 .cover-event-sub {
     font-family: 'Montserrat', sans-serif;
-    font-size: 8px;
-    font-weight: 400;
-    letter-spacing: 0.22em;
-    color: rgba(255,255,255,0.65);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    color: rgba(255,255,255,0.75);
+    text-transform: uppercase;
+    text-align: center;
 }
 
-/* Date — prominent */
 .cover-event-date {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.08em;
     color: #ffffff;
+    text-align: center;
+    line-height: 1;
 }
 
 .cover-event-sep { display: none; }
